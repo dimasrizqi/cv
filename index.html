@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV - Radja Rizqi Ramadhan</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- FONT -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ICON -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <button onclick="downloadPDF()">Download CV</button>
+    </header>
+
+    <!-- 🔥 WRAPPER (PENTING UNTUK PDF) -->
+    <div id="cv">
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1>RADJA RIZQI RAMADHAN</h1>
+            <h2>System & Software Engineer</h2>
+
+            <p>
+              Hello, I am a Software & System Engineer who help people solve the
+              problem with IT and create with passion
+            </p>
+          </div>
+
+          <div class="hero-img">
+            <img src="img/profile.png" alt="Profile" />
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTENT -->
+      <section class="content">
+        <!-- LEFT -->
+        <div class="left">
+          <div class="card">
+            <h3><i class="fa fa-address-book"></i> CONTACT</h3>
+            <p><i class="fa fa-envelope"></i> dimasrizqi@gmail.com</p>
+            <p><i class="fa fa-phone"></i> 08989541406</p>
+            <p><i class="fa fa-location-dot"></i> Bogor, Indonesia</p>
+            <p><i class="fa-brands fa-instagram"></i> dimasrizqi</p>
+          </div>
+
+          <div class="card">
+            <h3><i class="fa fa-code"></i> SKILLS</h3>
+            <ul>
+              <li>PHP - Laravel - CI - JS - HTML5</li>
+              <li>Dart - Flutter</li>
+              <li>Python - Django, OpenCV</li>
+              <li>Git</li>
+              <li>MySQL, PostgreSQL, SQLite</li>
+              <li>Linux Server - Debian Ubuntu</li>
+              <li>GCP, AWS, Alibaba Cloud</li>
+              <li>DevOps</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3><i class="fa fa-graduation-cap"></i> EDUCATION</h3>
+
+            <div class="edu-item">
+              <i class="fa fa-book"></i>
+              <span>Teknik Informatika</span>
+            </div>
+
+            <div class="edu-item">
+              <i class="fa fa-school"></i>
+              <span>STMIK Ganesha</span>
+            </div>
+
+            <div class="edu-item">
+              <i class="fa fa-calendar"></i>
+              <span>2011 - 2015</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="right">
+          <div class="card">
+            <h3><i class="fa fa-briefcase"></i> EXPERIENCE</h3>
+
+            <div class="exp-item">
+              <h4>PT FUTAMI FOOD & BEVEREGES</h4>
+              <span
+                ><i class="fa fa-location-dot"></i> Bogor | 02 2019 -
+                present</span
+              >
+              <p>IT Support</p>
+            </div>
+
+            <div class="exp-item">
+              <h4>PT APLIKANUSA LINTASARTA</h4>
+              <span
+                ><i class="fa fa-location-dot"></i> Jakarta | 07 2018 - 02
+                2019</span
+              >
+              <p>Project Engineer</p>
+            </div>
+
+            <div class="exp-item">
+              <h4>KOPERASI SEJAHTERA BERSAMA</h4>
+              <span
+                ><i class="fa fa-location-dot"></i> Bogor | 11 2017 - 07
+                2018</span
+              >
+              <p>Network & System Engineer</p>
+            </div>
+
+            <div class="exp-item">
+              <h4>SISKOHAT - KEMENTERIAN AGAMA</h4>
+              <span
+                ><i class="fa fa-location-dot"></i> Jakarta | 06 2017 - 11
+                2017</span
+              >
+              <p>Network & System Engineer</p>
+            </div>
+
+            <div class="exp-item">
+              <h4>PT DEFENDER NUSA SEMESTA</h4>
+              <span
+                ><i class="fa fa-location-dot"></i> Jakarta | 06 2016 - 08
+                2017</span
+              >
+              <p>Security System Engineer</p>
+            </div>
+
+            <div class="exp-item">
+              <h4>SMK WIKRAMA BOGOR</h4>
+              <span
+                ><i class="fa fa-location-dot"></i> Bogor | 06 2011 - 06
+                2016</span
+              >
+              <p>Pengurus Laboratorium Komputer</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3><i class="fa fa-diagram-project"></i> WHAT I HAVE DONE</h3>
+            <ul>
+              <li>Create website application system</li>
+              <li>Build mobile apps (Flutter)</li>
+              <li>Container architecture (Docker)</li>
+              <li>DevOps CI/CD setup</li>
+              <li>Cybersecurity implementation</li>
+              <li>Server infrastructure setup</li>
+              <li>Network engineering</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- SCRIPT -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+    <script>
+      function downloadPDF() {
+        const element = document.getElementById("cv");
+
+        const opt = {
+          margin: 10,
+          filename: "CV-Radja-Rizqi-Ramadhan.pdf",
+          image: { type: "jpeg", quality: 1 },
+          html2canvas: {
+            scale: 2,
+            useCORS: true,
+            scrollY: 0,
+          },
+          jsPDF: {
+            unit: "mm",
+            format: "a4",
+            orientation: "portrait",
+          },
+          pagebreak: {
+            mode: ["avoid-all", "css", "legacy"],
+          },
+        };
+
+        html2pdf().set(opt).from(element).save();
+      }
+
+      document.addEventListener("keydown", function (e) {
+        if (e.ctrlKey && e.key === "p") {
+          e.preventDefault(); // ❌ stop print default browser
+          downloadPDF(); // ✅ jalankan download PDF
+        }
+      });
+    </script>
+  </body>
+</html>
