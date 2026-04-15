@@ -51,7 +51,7 @@ header button:hover {
 .hero-text h1 {
     font-size: 40px;
     font-weight: 700;
-     letter-spacing: 1px;
+    letter-spacing: 1px;
 }
 
 .hero-text h2 {
@@ -71,7 +71,7 @@ header button:hover {
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    object-fit: cover; 
+    object-fit: cover;
 }
 
 /* CONTENT */
@@ -114,7 +114,7 @@ header button:hover {
     margin-right: 8px;
 }
 
-/* LIST */
+/* LIST GLOBAL */
 ul {
     padding-left: 20px;
 }
@@ -123,8 +123,28 @@ ul li {
     margin-bottom: 8px;
 }
 
-ul li i {
-    color: #22c55e;
+/* ================= WHAT I HAVE DONE ================= */
+.done-list {
+    padding-left: 18px;
+}
+
+.done-list li {
+    margin-bottom: 12px;
+    page-break-inside: avoid;
+}
+
+.done-list li strong {
+    display: block;
+    font-size: 13px;
+    margin-bottom: 3px;
+    color: #0f172a;
+}
+
+.done-list li p {
+    font-size: 13px;
+    line-height: 1.6;
+    margin: 0;
+    text-align: justify;
 }
 
 /* EXPERIENCE */
@@ -137,9 +157,9 @@ ul li i {
     color: gray;
 }
 
+/* ================= RESPONSIVE ================= */
 @media (max-width: 768px) {
 
-    /* HEADER */
     header {
         padding: 10px 20px;
     }
@@ -149,7 +169,6 @@ ul li i {
         padding: 8px 12px;
     }
 
-    /* HERO */
     .hero {
         padding: 40px 20px;
     }
@@ -173,15 +192,12 @@ ul li i {
         max-width: 100%;
     }
 
-    /* FOTO FIX */
     .hero-img img {
         width: 160px;
         height: 160px;
-        transform: none; 
         margin: 0 auto;
     }
 
-    /* CONTENT */
     .content {
         flex-direction: column;
         padding: 20px;
@@ -192,7 +208,6 @@ ul li i {
         width: 100%;
     }
 
-    /* CARD */
     .card {
         padding: 15px;
     }
@@ -207,12 +222,6 @@ ul li i {
         line-height: 1.6;
     }
 
-    /* EDUCATION */
-    .edu-item {
-        justify-content: center;
-    }
-
-    /* EXPERIENCE */
     .exp-item h4 {
         font-size: 14px;
     }
@@ -226,6 +235,7 @@ ul li i {
     }
 }
 
+/* ================= PRINT (PDF) ================= */
 @media print {
 
     body {
@@ -237,14 +247,13 @@ ul li i {
         display: none;
     }
 
-    /* WRAPPER FIX A4 */
     #cv {
         width: 794px;
         margin: 0 auto;
         background: white;
     }
 
-    /* ================= HERO FIX ================= */
+    /* HERO */
     .hero {
         padding: 25px 40px !important;
     }
@@ -263,7 +272,6 @@ ul li i {
 
     .hero-text h1 {
         font-size: 24px;
-        line-height: 1.2;
         margin-bottom: 8px;
     }
 
@@ -278,26 +286,17 @@ ul li i {
         color: #333;
     }
 
-    /* FOTO LEBIH RAPI & PROPORSIONAL */
-    .hero-img {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
+    /* FOTO */
     .hero-img img {
-        width: 100px;        /* 🔥 DIPERKECIL */
+        width: 100px;
         height: 100px;
         border-radius: 50%;
-        object-fit: cover;
-        transform: none !important;
-        border: 6px solid #fff; /* biar estetik */
+        border: 5px solid #fff;
     }
 
-    /* ================= CONTENT ================= */
+    /* CONTENT */
     .content {
         display: flex !important;
-        flex-direction: row !important;
         gap: 15px;
         padding: 20px 40px;
     }
@@ -316,6 +315,7 @@ ul li i {
         border: 1px solid #ddd;
         margin-bottom: 12px;
         padding: 12px;
+        page-break-inside: avoid;
     }
 
     .card h3 {
@@ -328,9 +328,23 @@ ul li i {
         line-height: 1.4;
     }
 
+    /* WHAT I HAVE DONE PRINT */
+    .done-list li {
+        break-inside: avoid;
+    }
+
+    .done-list li strong {
+        font-size: 11px;
+    }
+
+    .done-list li p {
+        font-size: 10px;
+    }
+
     /* EXPERIENCE */
     .exp-item {
         margin-bottom: 10px;
+        page-break-inside: avoid;
     }
 
     .exp-item h4 {
@@ -343,14 +357,5 @@ ul li i {
 
     .exp-item p {
         font-size: 11px;
-    }
-
-    /* ANTI KEPOTONG */
-    .card,
-    .exp-item,
-    ul,
-    li {
-        page-break-inside: avoid !important;
-        break-inside: avoid !important;
     }
 }

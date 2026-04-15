@@ -26,7 +26,6 @@
       <button onclick="downloadPDF()">Download CV</button>
     </header>
 
-    <!-- 🔥 WRAPPER (PENTING UNTUK PDF) -->
     <div id="cv">
       <!-- HERO -->
       <section class="hero">
@@ -155,14 +154,68 @@
 
           <div class="card">
             <h3><i class="fa fa-diagram-project"></i> WHAT I HAVE DONE</h3>
-            <ul>
-              <li>Create website application system</li>
-              <li>Build mobile apps (Flutter)</li>
-              <li>Container architecture (Docker)</li>
-              <li>DevOps CI/CD setup</li>
-              <li>Cybersecurity implementation</li>
-              <li>Server infrastructure setup</li>
-              <li>Network engineering</li>
+
+            <ul class="done-list">
+              <li>
+                <strong>BUILDING WEB APPS</strong>
+                <p>
+                  create a website application system that can make it easier
+                  for humans to do work, increase productivity, streamline work
+                  time, get real time and online reports. Create executive
+                  dashboard to show the trends
+                </p>
+              </li>
+
+              <li>
+                <strong>BUILDING MOBILE APPS</strong>
+                <p>
+                  create a mobile application system using dart and flutter
+                  framework with high performance and beautiful layout. Can
+                  compile to android & ios apps.
+                </p>
+              </li>
+
+              <li>
+                <strong>CONTAINER USING DOCKER & KUBERNETES</strong>
+                <p>
+                  building architecture as a service and modular using
+                  container.
+                </p>
+              </li>
+
+              <li>
+                <strong>DEVOPS - CICD</strong>
+                <p>
+                  Setup devops environment with CICD method to automate
+                  repetitive jobs, make application modular and scalable, create
+                  monitoring pods to measure the service.
+                </p>
+              </li>
+
+              <li>
+                <strong>IT SECURITY</strong>
+                <p>
+                  Successful cyber security programs are built with 3 component
+                  people, technology & knowledge. Keep update about security and
+                  get the patch immediately.
+                </p>
+              </li>
+
+              <li>
+                <strong>DESIGN, BUILD, TROUBLESHOOT COMPUTER SERVER</strong>
+                <p>
+                  Experience since 2008 with linux & windows server, building
+                  reliable, fast and scalable system over network.
+                </p>
+              </li>
+
+              <li>
+                <strong>DESIGN, BUILD, TROUBLESHOOT COMPUTER NETWORK</strong>
+                <p>
+                  Setup routing, MPLS, NAT, mikrotik, cisco, wireless (UBNT,
+                  Ruckus, etc), and troubleshooting network issues.
+                </p>
+              </li>
             </ul>
           </div>
         </div>
@@ -177,31 +230,32 @@
         const element = document.getElementById("cv");
 
         const opt = {
-          margin: 10,
+          margin: [5, 5, 5, 5], // lebih aman dari tabrakan
           filename: "CV-Radja-Rizqi-Ramadhan.pdf",
           image: { type: "jpeg", quality: 1 },
           html2canvas: {
             scale: 2,
             useCORS: true,
-            scrollY: 0,
           },
           jsPDF: {
             unit: "mm",
             format: "a4",
             orientation: "portrait",
           },
+
           pagebreak: {
-            mode: ["avoid-all", "css", "legacy"],
+            mode: ["css"], 
           },
         };
 
         html2pdf().set(opt).from(element).save();
       }
 
+      
       document.addEventListener("keydown", function (e) {
         if (e.ctrlKey && e.key === "p") {
-          e.preventDefault(); // ❌ stop print default browser
-          downloadPDF(); // ✅ jalankan download PDF
+          e.preventDefault();
+          downloadPDF();
         }
       });
     </script>
