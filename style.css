@@ -10,19 +10,18 @@ body {
     font-family: 'Poppins', sans-serif;
     background: #f1f5f9;
     color: #1e293b;
-    font-size: 15px;
+    font-size: 13px; 
 }
 
-/* HEADER */
 header {
     background: #0f172a;
-    padding: 15px 60px;
+    padding: 10px 60px;
     display: flex;
     justify-content: flex-end;
 }
 
 header button {
-    padding: 10px 20px;
+    padding: 8px 16px;
     background: #38bdf8;
     border: none;
     color: white;
@@ -31,13 +30,14 @@ header button {
     font-weight: 500;
 }
 
-header button:hover {
-    background: #0ea5e9;
+#cv {
+    width: 210mm;
+    margin: 0 auto;
+    background: white;
 }
 
-/* HERO */
 .hero {
-    padding: 80px 60px;
+    padding: 25px 50px; 
     background: linear-gradient(to right, #0f172a, #1e293b);
     color: white;
 }
@@ -49,313 +49,98 @@ header button:hover {
 }
 
 .hero-text h1 {
-    font-size: 40px;
+    font-size: 24px; 
     font-weight: 700;
     letter-spacing: 1px;
 }
 
 .hero-text h2 {
-    font-size: 20px;
+    font-size: 16px;
     color: #38bdf8;
-    margin: 10px 0;
+    margin: 2px 0;
 }
 
 .hero-text p {
-    max-width: 500px;
-    line-height: 1.8;
+    max-width: 550px;
+    line-height: 1.4;
     color: #cbd5f5;
+    font-size: 11px;
 }
 
-/* FOTO */
 .hero-img img {
-    width: 300px;
-    height: 300px;
+    width: 100px; /* Dari 220px */
+    height: 100px;
     border-radius: 50%;
     object-fit: cover;
+    border: 3px solid rgba(255,255,255,0.1);
 }
 
-/* CONTENT */
 .content {
     display: flex;
-    gap: 30px;
-    padding: 50px 60px;
+    gap: 15px;
+    padding: 15px 50px; 
 }
 
-.left {
-    width: 30%;
-}
-
-.right {
-    width: 70%;
-}
+.left { width: 30%; }
+.right { width: 70%; }
 
 /* CARD */
 .card {
     background: white;
-    padding: 25px;
-    border-radius: 12px;
-    margin-bottom: 25px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    padding: 12px; 
+    border-radius: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #f1f5f9;
 }
 
 .card h3 {
-    margin-bottom: 15px;
-    font-size: 16px;
+    margin-bottom: 8px;
+    font-size: 13px;
     border-bottom: 2px solid #e2e8f0;
-    padding-bottom: 6px;
+    padding-bottom: 3px;
+    text-transform: uppercase;
 }
 
-.card p {
-    margin-bottom: 10px;
+.card p, .card li {
+    font-size: 10.5px; 
+    margin-bottom: 4px;
 }
 
 .card i {
     color: #38bdf8;
-    margin-right: 8px;
+    margin-right: 5px;
 }
 
-/* LIST GLOBAL */
-ul {
-    padding-left: 20px;
-}
+ul { padding-left: 12px; }
 
-ul li {
-    margin-bottom: 8px;
-}
 
-/* ================= WHAT I HAVE DONE ================= */
-.done-list {
-    padding-left: 18px;
-}
-
-.done-list li {
-    margin-bottom: 12px;
-    page-break-inside: avoid;
-}
-
+.done-list li { margin-bottom: 6px; list-style: none; }
 .done-list li strong {
     display: block;
-    font-size: 13px;
-    margin-bottom: 3px;
+    font-size: 11px;
     color: #0f172a;
 }
-
 .done-list li p {
-    font-size: 13px;
-    line-height: 1.6;
-    margin: 0;
+    font-size: 10px;
+    line-height: 1.3;
     text-align: justify;
 }
 
-/* EXPERIENCE */
-.exp-item {
-    margin-bottom: 20px;
-}
 
-.exp-item span {
-    font-size: 13px;
-    color: gray;
-}
+.exp-item { margin-bottom: 8px; }
+.exp-item h4 { font-size: 12px; color: #0f172a; }
+.exp-item span { font-size: 9.5px; color: #64748b; }
+.exp-item p { font-weight: 500; }
 
-/* ================= RESPONSIVE ================= */
-@media (max-width: 768px) {
 
-    header {
-        padding: 10px 20px;
-    }
-
-    header button {
-        font-size: 12px;
-        padding: 8px 12px;
-    }
-
-    .hero {
-        padding: 40px 20px;
-    }
-
-    .hero-content {
-        flex-direction: column;
-        text-align: center;
-        gap: 20px;
-    }
-
-    .hero-text h1 {
-        font-size: 24px;
-    }
-
-    .hero-text h2 {
-        font-size: 16px;
-    }
-
-    .hero-text p {
-        font-size: 13px;
-        max-width: 100%;
-    }
-
-    .hero-img img {
-        width: 160px;
-        height: 160px;
-        margin: 0 auto;
-    }
-
-    .content {
-        flex-direction: column;
-        padding: 20px;
-        gap: 15px;
-    }
-
-    .left, .right {
-        width: 100%;
-    }
-
-    .card {
-        padding: 15px;
-    }
-
-    .card h3 {
-        font-size: 14px;
-    }
-
-    .card p,
-    ul li {
-        font-size: 13px;
-        line-height: 1.6;
-    }
-
-    .exp-item h4 {
-        font-size: 14px;
-    }
-
-    .exp-item span {
-        font-size: 12px;
-    }
-
-    .exp-item p {
-        font-size: 13px;
-    }
-}
-
-/* ================= PRINT (PDF) ================= */
 @media print {
-
-    body {
-        background: white;
-        overflow: hidden;
-    }
-
-    header {
-        display: none;
-    }
-
-    #cv {
-        width: 794px;
-        margin: 0 auto;
-        background: white;
-    }
-
-    /* HERO */
-    .hero {
-        padding: 25px 40px !important;
-    }
-
-    .hero-content {
-        display: flex !important;
-        flex-direction: row !important;
-        justify-content: space-between;
-        align-items: center;
-        gap: 20px;
-    }
-
-    .hero-text {
-        max-width: 60%;
-    }
-
-    .hero-text h1 {
-        font-size: 24px;
-        margin-bottom: 8px;
-    }
-
-    .hero-text h2 {
-        font-size: 14px;
-        margin-bottom: 8px;
-    }
-
-    .hero-text p {
-        font-size: 11px;
-        line-height: 1.5;
-        color: #333;
-    }
-
-    /* FOTO */
-    .hero-img img {
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        border: 5px solid #fff;
-    }
-
-    /* CONTENT */
-    .content {
-        display: flex !important;
-        gap: 15px;
-        padding: 20px 40px;
-    }
-
-    .left {
-        width: 32%;
-    }
-
-    .right {
-        width: 68%;
-    }
-
-    /* CARD */
-    .card {
-        box-shadow: none;
-        border: 1px solid #ddd;
-        margin-bottom: 12px;
-        padding: 12px;
-        page-break-inside: avoid;
-    }
-
-    .card h3 {
-        font-size: 13px;
-    }
-
-    .card p,
-    .card li {
-        font-size: 11px;
-        line-height: 1.4;
-    }
-
-    /* WHAT I HAVE DONE PRINT */
-    .done-list li {
-        break-inside: avoid;
-    }
-
-    .done-list li strong {
-        font-size: 11px;
-    }
-
-    .done-list li p {
-        font-size: 10px;
-    }
-
-    /* EXPERIENCE */
-    .exp-item {
-        margin-bottom: 10px;
-        page-break-inside: avoid;
-    }
-
-    .exp-item h4 {
-        font-size: 12px;
-    }
-
-    .exp-item span {
-        font-size: 10px;
-    }
-
-    .exp-item p {
-        font-size: 11px;
-    }
+    body { background: white; }
+    header { display: none; }
+    #cv { width: 100% !important; height: 100%; }
+    .hero { padding: 15px 35px !important; }
+    .hero-img img { width: 80px !important; height: 80px !important; }
+    .hero-text h1 { font-size: 20px !important; }
+    .content { padding: 10px 35px !important; gap: 10px !important; }
+    .card { padding: 10px !important; margin-bottom: 8px !important; }
+    .card p, .card li, .exp-item p, .done-list li p { font-size: 9.5px !important; }
 }
