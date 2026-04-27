@@ -1,0 +1,690 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV - Misbah Ur Rehman</title>
+
+    <link rel="stylesheet" href="style1.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <div class="sidebar-content">
+          <img src="img/profile.png" class="profile" alt="Profile Picture" />
+
+          <div class="profile-info">
+            <h2>Radja Rizqi Ramadhan</h2>
+            <p class="role-tag">System & Software Engineer</p>
+          </div>
+
+          <div class="underline-full"></div>
+
+          <div class="info-list">
+            <div class="info-item">
+              <div class="icon-box"><i class="fa fa-envelope"></i></div>
+              <div>
+                <p class="label">EMAIL</p>
+                <p class="value">dimasrizqi@gmail.com</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="icon-box"><i class="fa fa-briefcase"></i></div>
+              <div>
+                <p class="label">AVAILABILITY</p>
+                <p class="value">Open to Opportunities</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="icon-box"><i class="fa fa-shield-halved"></i></div>
+              <div>
+                <p class="label">CERTIFICATIONS</p>
+                <p class="value">Security+ Certified</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="underline-full"></div>
+
+          <div class="social-links">
+            <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-medium"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="main">
+        <div class="nav">
+          <a class="nav-link active" data-page="about">About</a>
+          <a class="nav-link" data-page="resume">Resume</a>
+          <a class="nav-link" data-page="projects">Projects</a>
+          <a class="nav-link" data-page="blog">Blog</a>
+          <a class="nav-link" data-page="contact">Contact</a>
+        </div>
+
+        <div id="about" class="page active">
+          <h2>About Me</h2>
+          <div class="underline"></div>
+          <p class="about-text">
+            Hello! I am a <b>Software & System Engineer</b> who is passionate
+            about solving complex problems through innovative IT solutions. I
+            specialize in building efficient systems and creating digital
+            products that are not only functional but also deliver real value to
+            users. My goal is to bridge the gap between <b>human needs</b> and
+            <b>technology</b> with clean code and robust architecture.
+          </p>
+
+          <h3 class="mt">What I'm Doing</h3>
+          <div class="cards">
+            <div class="card">
+              <i class="fa fa-chart-line"></i>
+              <h4>SIEM</h4>
+              <p>
+                Create Security Information Event Management using
+                Elasticsearch, Kibana & Logstash, Wazuh to deliver executive
+                dashboards that visualize security trends.
+              </p>
+            </div>
+
+            <div class="card">
+              <i class="fa fa-code"></i>
+              <h4>BUILDING WEB APPS</h4>
+              <p>
+                Create web applications that simplify tasks, increase
+                productivity, streamline workflows, and provide real-time online
+                reports with executive dashboards.
+              </p>
+            </div>
+
+            <div class="card">
+              <i class="fa fa-mobile-screen-button"></i>
+              <h4>BUILDING MOBILE APPS</h4>
+              <p>
+                Create high-performance mobile applications using Dart and
+                Flutter framework with beautiful layouts, compilable to both
+                Android & iOS.
+              </p>
+            </div>
+
+            <div class="card">
+              <i class="fa fa-box-archive"></i>
+              <h4>CONTAINER USING DOCKER & KUBERNETES</h4>
+              <p>
+                Building modular Architecture-as-a-Service using
+                containerization technologies for scalable and reliable
+                deployments.
+              </p>
+            </div>
+
+            <div class="card">
+              <i class="fa fa-infinity"></i>
+              <h4>DEVOPS - CICD</h4>
+              <p>
+                Setup DevOps environments with CI/CD to automate repetitive
+                jobs, ensuring applications are modular, scalable, and monitored
+                via pod metrics.
+              </p>
+            </div>
+
+            <div class="card">
+              <i class="fa fa-user-shield"></i>
+              <h4>IT SECURITY</h4>
+              <p>
+                Building cyber security programs through People, Technology &
+                Knowledge. Staying updated with the latest security patches and
+                trends.
+              </p>
+            </div>
+
+            <div class="card">
+              <i class="fa fa-server"></i>
+              <h4>DESIGN, BUILD, TROUBLESHOOT COMPUTER SERVER</h4>
+              <p>
+                Experience since 2008 with Linux & Windows servers, building
+                reliable, fast, and scalable systems over network
+                infrastructures.
+              </p>
+            </div>
+
+            <div class="card">
+              <i class="fa fa-network-wired"></i>
+              <h4>DESIGN, BUILD, TROUBLESHOOT COMPUTER NETWORK</h4>
+              <p>
+                Setup routing, MPLS, NAT, MikroTik, Cisco, and Wireless (UBNT,
+                Ruckus, etc), while providing expert troubleshooting for network
+                issues.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div id="resume" class="page">
+          <div class="header">
+            <h2>Resume</h2>
+            <button id="download-btn" onclick="generatePDF()">
+              <i class="fa fa-download"></i> Download Resume
+            </button>
+          </div>
+          <div class="underline"></div>
+
+          <div class="section">
+            <h3 style="color: #111827">
+              <i
+                class="fa fa-briefcase"
+                style="color: #3b82f6; margin-right: 10px"
+              ></i>
+              Experience
+            </h3>
+            <div
+              class="timeline"
+              style="
+                border-left: 2px solid #3b82f6;
+                padding-left: 20px;
+                margin-left: 10px;
+                margin-top: 20px;
+              "
+            >
+              <div class="item">
+                <h4 style="font-size: 16px; color: #111827">
+                  PT SAVORIA KREASI RASA
+                </h4>
+                <span style="color: #3b82f6; font-size: 13px"
+                  >Jakarta | 02 2019 - present</span
+                >
+                <p
+                  style="
+                    color: #4b5563;
+                    font-size: 14px;
+                    margin-top: 5px;
+                    font-weight: 500;
+                  "
+                >
+                  BIZTECH INFRASTRUCTURE & SECURITY SUPERVISOR
+                </p>
+              </div>
+
+              <div class="item">
+                <h4 style="font-size: 16px; color: #111827">
+                  PT APLIKANUSA LINTASARTA
+                </h4>
+                <span style="color: #3b82f6; font-size: 13px"
+                  >Jakarta | 07 2018 - 02 2019</span
+                >
+                <p style="color: #4b5563; font-size: 14px; margin-top: 5px">
+                  Project Engineer
+                </p>
+              </div>
+
+              <div class="item">
+                <h4 style="font-size: 16px; color: #111827">
+                  KOPERASI SEJAHTERA BERSAMA
+                </h4>
+                <span style="color: #3b82f6; font-size: 13px"
+                  >Bogor | 11 2017 - 07 2018</span
+                >
+                <p style="color: #4b5563; font-size: 14px; margin-top: 5px">
+                  Network & System Engineer
+                </p>
+              </div>
+
+              <div class="item">
+                <h4 style="font-size: 16px; color: #111827">
+                  SISKOHAT - KEMENTERIAN AGAMA
+                </h4>
+                <span style="color: #3b82f6; font-size: 13px"
+                  >Jakarta | 06 2017 - 11 2017</span
+                >
+                <p style="color: #4b5563; font-size: 14px; margin-top: 5px">
+                  Network & System Engineer
+                </p>
+              </div>
+
+              <div class="item">
+                <h4 style="font-size: 16px; color: #111827">
+                  PT DEFENDER NUSA SEMESTA
+                </h4>
+                <span style="color: #3b82f6; font-size: 13px"
+                  >Jakarta | 06 2016 - 08 2017</span
+                >
+                <p style="color: #4b5563; font-size: 14px; margin-top: 5px">
+                  Security System Engineer
+                </p>
+              </div>
+
+              <div class="item">
+                <h4 style="font-size: 16px; color: #111827">
+                  SMK WIKRAMA BOGOR
+                </h4>
+                <span style="color: #3b82f6; font-size: 13px"
+                  >Bogor | 06 2011 - 06 2016</span
+                >
+                <p style="color: #4b5563; font-size: 14px; margin-top: 5px">
+                  Computer Lab Staff
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="section" style="margin-top: 40px">
+            <h3 style="color: #111827">
+              <i
+                class="fa fa-graduation-cap"
+                style="color: #3b82f6; margin-right: 10px"
+              ></i>
+              Education
+            </h3>
+            <div
+              class="timeline"
+              style="
+                border-left: 2px solid #3b82f6;
+                padding-left: 20px;
+                margin-left: 10px;
+                margin-top: 20px;
+              "
+            >
+              <div class="item">
+                <h4 style="font-size: 16px; color: #111827">
+                  Teknik Informatika
+                </h4>
+                <span style="color: #3b82f6; font-size: 13px"
+                  >STMIK Ganesha</span
+                >
+                <p style="color: #4b5563; font-size: 14px; margin-top: 5px">
+                  2011 - 2015
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="projects" class="page">
+          <h2>Projects</h2>
+          <div class="underline"></div>
+          <div class="project-grid">
+            <img src="img/sample-1.jpg" class="project-img" />
+            <img src="img/sample-2.jpg" class="project-img" />
+            <img src="img/sample-3.jpg" class="project-img" />
+            <img src="img/sample-4.jpg" class="project-img" />
+          </div>
+        </div>
+
+        <div id="blog" class="page">
+          <h2>Blog</h2>
+          <div class="underline"></div>
+
+          <div class="blog-grid">
+            <div
+              class="blog-card"
+              onclick="
+                openBlog(
+                  'Advanced Threat Detection Techniques in SOC Operations',
+                  'Aug 8, 2025',
+                  'Security Operations',
+                  'Di era siber saat ini, metode tradisional berbasis signature tidak lagi cukup. Behavioral analysis menggunakan Machine Learning memungkinkan kita mendeteksi anomali pada traffic jaringan sebelum serangan terjadi. Artikel ini membahas bagaimana mengintegrasikan AI ke dalam alur kerja SOC L1.',
+                )
+              "
+            >
+              <div class="blog-img-container">
+                <img src="img/sample-1.jpg" alt="Threat Detection" />
+              </div>
+              <div class="blog-content">
+                <span class="category-tag">Security Operations</span>
+                <div class="blog-meta">
+                  <span
+                    ><i class="fa-regular fa-calendar"></i> Aug 8, 2025</span
+                  >
+                  <span><i class="fa-regular fa-clock"></i> 14 min</span>
+                </div>
+                <h3>Advanced Threat Detection Techniques in SOC Operations</h3>
+                <p>
+                  Deep dive into behavioral analysis, anomaly detection, and
+                  threat hunting strategies from a SOC Level 1 analyst
+                  perspective.
+                </p>
+                <div class="blog-tags">
+                  <span>Threat Detection</span>
+                  <span>SIEM</span>
+                  <span>Incident Response</span>
+                </div>
+                <span class="read-more"
+                  >Read More <i class="fa fa-arrow-right"></i
+                ></span>
+              </div>
+            </div>
+
+            <div
+              class="blog-card"
+              onclick="
+                openBlog(
+                  'Understanding SIEM Tools: Splunk vs ELK Stack',
+                  'Mar 20, 2025',
+                  'Security Operations',
+                  'Memilih antara Splunk dan ELK Stack seringkali membingungkan. Splunk menawarkan kemudahan enterprise, sementara ELK memberikan fleksibilitas open-source.',
+                )
+              "
+            >
+              <div class="blog-img-container">
+                <img src="img/sample-2.jpg" alt="SIEM Tools" />
+              </div>
+              <div class="blog-content">
+                <span class="category-tag">Security Operations</span>
+                <div class="blog-meta">
+                  <span
+                    ><i class="fa-regular fa-calendar"></i> Mar 20, 2025</span
+                  >
+                  <span><i class="fa-regular fa-clock"></i> 12 min</span>
+                </div>
+                <h3>Understanding SIEM Tools: Splunk vs ELK Stack</h3>
+                <p>
+                  A practical comparison of Splunk and ELK Stack from a SOC
+                  Level 1 analyst's daily experience.
+                </p>
+                <div class="blog-tags">
+                  <span>SIEM</span>
+                  <span>Splunk</span>
+                  <span>ELK</span>
+                </div>
+                <span class="read-more"
+                  >Read More <i class="fa fa-arrow-right"></i
+                ></span>
+              </div>
+            </div>
+
+            <div
+              class="blog-card"
+              onclick="
+                openBlog(
+                  'Implementing Security Automation in Your SOC',
+                  'Nov 12, 2025',
+                  'Security Operations',
+                  'Otomatisasi bukan tentang mengganti analis, tapi tentang mempercepat respon.',
+                )
+              "
+            >
+              <div class="blog-img-container">
+                <img src="img/sample-3.jpg" alt="Automation" />
+              </div>
+              <div class="blog-content">
+                <span class="category-tag">Security Operations</span>
+                <div class="blog-meta">
+                  <span
+                    ><i class="fa-regular fa-calendar"></i> Nov 12, 2025</span
+                  >
+                  <span><i class="fa-regular fa-clock"></i> 15 min</span>
+                </div>
+                <h3>Implementing Security Automation in Your SOC</h3>
+                <p>
+                  Practical guide to implementing SOAR platforms and automating
+                  repetitive security tasks.
+                </p>
+                <div class="blog-tags">
+                  <span>Automation</span>
+                  <span>SOAR</span>
+                </div>
+                <span class="read-more"
+                  >Read More <i class="fa fa-arrow-right"></i
+                ></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="blog-detail" class="page">
+          <button
+            onclick="backToBlog()"
+            style="
+              background: #e0edff;
+              border: none;
+              color: #2563eb;
+              padding: 8px 15px;
+              border-radius: 8px;
+              cursor: pointer;
+              margin-bottom: 20px;
+              font-weight: 600;
+            "
+          >
+            <i class="fa fa-arrow-left"></i> Back to Blog
+          </button>
+          <div id="blog-content-full"></div>
+        </div>
+
+        <div id="contact" class="page">
+          <h2>Contact</h2>
+          <div class="underline"></div>
+
+          <form
+            action="https://formspree.io/f/dimasrizqi@gmail.com"
+            method="POST"
+            class="contact-form"
+          >
+            <div class="form-row">
+              <div class="form-group">
+                <label>Full Name</label>
+                <input
+                  type="text"
+                  name="fullname"
+                  placeholder="Your Name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label>Email Address</label>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="mail@example.com"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-group" style="margin-top: 20px">
+              <label>Your Message</label>
+              <textarea
+                name="message"
+                rows="6"
+                placeholder="Write your message here..."
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn-send">
+              <i class="fa-regular fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modal-img" />
+    </div>
+
+    <script>
+      // NAVIGASI PAGE
+      const links = document.querySelectorAll(".nav-link");
+      const pages = document.querySelectorAll(".page");
+
+      links.forEach((link) => {
+        link.addEventListener("click", () => {
+          const pageId = link.getAttribute("data-page");
+          if (pageId) {
+            showPage(pageId);
+          }
+        });
+      });
+
+      function showPage(pageId) {
+        links.forEach((l) => {
+          l.classList.remove("active");
+          if (l.getAttribute("data-page") === pageId) l.classList.add("active");
+        });
+        pages.forEach((p) => p.classList.remove("active"));
+        document.getElementById(pageId).classList.add("active");
+        window.scrollTo(0, 0);
+      }
+
+      function generatePDF() {
+    const name = "RADJA RIZQI RAMADHAN";
+    const role = "System & Software Engineer";
+    const contact = "Bogor, Indonesia | dimasrizqi@gmail.com | 08989541406";
+    
+    const summaryEnglish = "System & Software Engineer with extensive experience in designing server infrastructure, system security, and developing web and mobile applications. Expert in managing Linux Servers and container technologies (Docker & Kubernetes) with a focus on scalability and efficiency. Hands-on experience in building SIEM systems using ELK Stack and Wazuh, as well as implementing DevSecOps and CI/CD workflows. Skilled in troubleshooting complex network infrastructures (Cisco/Mikrotik) and committed to delivering secure, automated, and well-documented technological solutions.";
+
+    const pdfElement = document.createElement('div');
+    
+    // Styling PDF: Bersih, Hitam Putih, Rapat
+    pdfElement.style.padding = "30px 40px";
+    pdfElement.style.color = "#000";
+    pdfElement.style.backgroundColor = "#fff";
+    pdfElement.style.fontFamily = "'Arial', sans-serif";
+    pdfElement.style.fontSize = "10pt";
+    pdfElement.style.lineHeight = "1.3";
+
+    let content = `
+        <div style="text-align: center; padding-bottom: 8px; margin-bottom: 15px;">
+            <h1 style="margin: 0; font-size: 18pt; text-transform: uppercase; letter-spacing: 1px;">${name}</h1>
+            <p style="margin: 3px 0; font-weight: bold; font-size: 11pt;">${role}</p>
+            <p style="margin: 0; font-size: 9pt;">${contact}</p>
+        </div>
+
+        <div style="margin-bottom: 15px;">
+            <h3 style="text-transform: uppercase; border-bottom: 1px solid #000; margin-bottom: 5px; font-size: 10.5pt;">Summary</h3>
+            <p style="margin: 0; text-align: justify; font-size: 9.5pt;">${summaryEnglish}</p>
+        </div>
+
+        <div style="margin-bottom: 15px;">
+            <h3 style="text-transform: uppercase; border-bottom: 1px solid #000; margin-bottom: 8px; font-size: 10.5pt;">What I Have Done</h3>
+            <div style="font-size: 9pt;">
+                <p style="margin: 0 0 5px 0;"><strong>SIEM:</strong> Create system information event management using elasticsearch, kibana & logstash, wazuh to deliver executive dashboard to show the security trends.</p>
+                <p style="margin: 0 0 5px 0;"><strong>BUILDING WEB APPS:</strong> Create website applications to increase productivity, streamline work time, and provide real-time reports with executive dashboards.</p>
+                <p style="margin: 0 0 5px 0;"><strong>BUILDING MOBILE APPS:</strong> Create high-performance mobile applications using Dart and Flutter framework for Android & iOS.</p>
+                <p style="margin: 0 0 5px 0;"><strong>CONTAINERS:</strong> Building modular Architecture-as-a-Service using Docker & Kubernetes.</p>
+                <p style="margin: 0 0 5px 0;"><strong>DEVOPS - CICD:</strong> Setup automated CI/CD environments to automate repetitive jobs, ensuring scalability and service monitoring.</p>
+                <p style="margin: 0 0 5px 0;"><strong>IT SECURITY:</strong> Implementing cyber security programs focusing on technology, knowledge, and immediate patch management.</p>
+                <p style="margin: 0 0 5px 0;"><strong>COMPUTER SERVER:</strong> Experience since 2008 in designing and troubleshooting reliable Linux & Windows server systems.</p>
+                <p style="margin: 0 0 5px 0;"><strong>COMPUTER NETWORK:</strong> Setup and troubleshooting for Routing, MPLS, NAT, MikroTik, Cisco, and Wireless systems.</p>
+            </div>
+        </div>
+
+        <div style="margin-bottom: 15px;">
+            <h3 style="text-transform: uppercase; border-bottom: 1px solid #000; margin-bottom: 5px; font-size: 10.5pt;">Technical Skills</h3>
+            <p style="font-size: 9pt; margin: 0;">
+                <strong>Software:</strong> PHP (Laravel, CI), Dart (Flutter), Python (Django), JS, MySQL, PostgreSQL.<br>
+                <strong>Infrastructure:</strong> Linux Server, Docker, Kubernetes, CI/CD, DevSecOps, GCP, AWS.<br>
+                <strong>Networking:</strong> MikroTik, Cisco, MPLS, SIEM (ELK/Wazuh), Firewall, VPN.
+            </p>
+        </div>
+    `;
+
+    // Helper untuk mengambil data Experience & Education
+    function getCleanContent(selectorIndex) {
+        const originalItems = document.querySelectorAll('#resume .timeline')[selectorIndex].querySelectorAll('.item');
+        let html = '';
+        originalItems.forEach(item => {
+            const title = item.querySelector('h4').innerText;
+            const date = item.querySelector('span').innerText;
+            const position = item.querySelector('p').innerText;
+            html += `
+                <div style="margin-bottom: 8px;">
+                    <table style="width: 100%; border-collapse: collapse;">
+                        <tr>
+                            <td style="font-weight: bold; font-size: 10pt;">${title}</td>
+                            <td style="text-align: right; font-size: 8.5pt;">${date}</td>
+                        </tr>
+                    </table>
+                    <p style="margin: 1px 0 0 0; font-style: italic; font-size: 9pt;">${position}</p>
+                </div>
+            `;
+        });
+        return html;
+    }
+
+    // SECTION EXPERIENCE
+    content += `
+        <div style="margin-bottom: 15px;">
+            <h3 style="text-transform: uppercase; border-bottom: 1px solid #000; margin-bottom: 8px; font-size: 10.5pt;">Professional Experience</h3>
+            ${getCleanContent(0)}
+        </div>
+    `;
+
+    // SECTION EDUCATION
+    content += `
+        <div style="margin-bottom: 15px;">
+            <h3 style="text-transform: uppercase; border-bottom: 1px solid #000; margin-bottom: 8px; font-size: 10.5pt;">Education</h3>
+            ${getCleanContent(1)}
+        </div>
+    `;
+
+    pdfElement.innerHTML = content;
+
+    const opt = {
+        margin: [10, 10, 10, 10],
+        filename: 'resume.pdf',
+        image: { type: 'jpeg', quality: 1 },
+        html2canvas: { scale: 3, useCORS: true },
+        jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+    };
+
+    html2pdf().set(opt).from(pdfElement).save();
+}
+      // FUNGSI OPEN DETAIL BLOG
+      function openBlog(title, date, category, content) {
+        const detailPage = document.getElementById("blog-detail");
+        const contentDiv = document.getElementById("blog-content-full");
+
+        contentDiv.innerHTML = `
+        <span class="category-tag">${category}</span>
+        <h1 style="margin: 15px 0; font-size: 28px; color: #111827;">${title}</h1>
+        <div style="display: flex; gap: 15px; color: #6b7280; font-size: 13px; margin-bottom: 20px;">
+            <span><i class="fa-regular fa-calendar"></i> ${date}</span>
+        </div>
+        <div class="underline" style="width: 100px; height: 4px;"></div>
+        <div style="line-height: 1.8; color: #4b5563; margin-top: 30px; font-size: 16px;">
+            ${content}
+        </div>
+    `;
+
+        pages.forEach((p) => p.classList.remove("active"));
+        detailPage.classList.add("active");
+        window.scrollTo(0, 0);
+      }
+
+      function backToBlog() {
+        showPage("blog");
+      }
+
+      // MODAL IMAGE (PROJECTS)
+      const images = document.querySelectorAll(".project-img");
+      const modal = document.getElementById("modal");
+      const modalImg = document.getElementById("modal-img");
+      const close = document.querySelector(".close");
+
+      images.forEach((img) => {
+        img.addEventListener("click", () => {
+          modal.style.display = "flex";
+          modalImg.src = img.src;
+        });
+      });
+
+      close.onclick = () => (modal.style.display = "none");
+      modal.onclick = () => (modal.style.display = "none");
+    </script>
+  </body>
+</html>
